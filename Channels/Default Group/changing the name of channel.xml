@@ -3,7 +3,7 @@
   <nextMetaDataId>2</nextMetaDataId>
   <name>changing the name of channel</name>
   <description/>
-  <revision>4</revision>
+  <revision>5</revision>
   <sourceConnector version="4.3.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -174,7 +174,15 @@
         <mapVariables/>
       </properties>
       <transformer version="4.3.0">
-        <elements/>
+        <elements>
+          <com.mirth.connect.plugins.javascriptstep.JavaScriptStep version="4.3.0">
+            <sequenceNumber>0</sequenceNumber>
+            <enabled>true</enabled>
+            <script msync-fileref="destinationConnector-Destination 1-transformer-step-0.js"/>
+          </com.mirth.connect.plugins.javascriptstep.JavaScriptStep>
+        </elements>
+        <inboundTemplate encoding="base64"/>
+        <outboundTemplate encoding="base64">eyJ0ZXN0IiA6ICJ0ZXN0In0=</outboundTemplate>
         <inboundDataType>HL7V2</inboundDataType>
         <outboundDataType>HL7V2</outboundDataType>
         <inboundProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DataTypeProperties" version="4.3.0">
@@ -390,7 +398,7 @@
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1690402885510</time>
+        <time>1690403059226</time>
         <timezone>Asia/Muscat</timezone>
       </lastModified>
       <pruningSettings>
